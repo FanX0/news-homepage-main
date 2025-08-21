@@ -105,7 +105,8 @@ p {
   color: var(--color-Dark-grayish-blue);
 }
 
-li {
+ul,
+ol {
   list-style: none;
 }
 
