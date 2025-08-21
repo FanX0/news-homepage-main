@@ -142,7 +142,7 @@ ol {
   gap: 2rem;
 }
 
-.new-section ul li {
+.new-list {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
@@ -150,9 +150,9 @@ ol {
   border-bottom: 1px solid var(--color-Dark-grayish-blue);
 }
 
-.new-section ul li:last-child {
+.new-list:last-child {
   padding-bottom: 0;
-  border-bottom: none; /* remove the last divider */
+  border-bottom: none;
 }
 
 .new {
