@@ -11,20 +11,183 @@
       sizes="32x32"
       href="./assets/images/favicon-32x32.png"
     />
+    <link rel="stylesheet" href="./index.css" />
+    <script src="./index.js" defer></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
 
     <title>Frontend Mentor | News homepage</title>
   </head>
   <body>
-    Home New Popular Trending Categories The Bright Future of Web 3.0? We dive
-    into the next evolution of the web that claims to put the power of the
-    platforms back into the hands of the people. But is it really fulfilling its
-    promise? Read more New Hydrogen VS Electric Cars Will hydrogen-fueled cars
-    ever catch up to EVs? The Downsides of AI Artistry What are the possible
-    adverse effects of on-demand AI image generation? Is VC Funding Drying Up?
-    Private funding by VC firms is down 50% YOY. We take a look at what that
-    means. 01 Reviving Retro PCs What happens when old PCs are given modern
-    upgrades? 02 Top 10 Laptops of 2022 Our best picks for various needs and
-    budgets. 03 The Growth of Gaming How the pandemic has sparked fresh
-    opportunities.
+    <header>
+      <nav aria-label="Primary">
+        <a href="" aria-label="Homepage"
+          ><img
+            src="./assets/images/logo.svg"
+            alt="nav-logo"
+            class="nav-logo"
+            aria-hidden="true"
+        /></a>
+        <button
+          id="nav-toggle"
+          class="nav-toggle"
+          aria-controls="site-nav"
+          aria-expanded="false"
+          aria-label="Open menu"
+          aria-haspopup="menu"
+        >
+          <img
+            id="nav-side-img"
+            class="nav-side-img"
+            src="./assets/images/icon-menu.svg"
+            alt="nav-side"
+            aria-hidden="true"
+          />
+        </button>
+        <ul id="site-nav" class="nav-list-item" hidden>
+          <li><a href="#" aria-current="page">Home</a></li>
+          <li><a href="#">New</a></li>
+          <li><a href="#">Popular</a></li>
+          <li><a href="#">Trending</a></li>
+          <li><a href="#">Categories</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main id="maiin">
+      <article aria-labelledby="main-headline">
+        <div class="main-container">
+          <picture class="main-content1">
+            <!-- For small screens (mobile) -->
+            <source
+              srcset="./assets/images/image-web-3-mobile.jpg"
+              type="image/webp"
+              media="(max-width: 37.5rem)"
+              alt="img-content"
+              class="img"
+              class="responsive-image"
+            />
+
+            <!-- For large screens (desktop) -->
+            <source
+              srcset="./assets/images/image-web-3-desktop.jpg"
+              type="image/webp"
+              media="(min-width: 102.5rem)"
+              alt="img-content-desktop"
+              class="responsive-image"
+            />
+
+            <!-- Fallback for browsers that don’t support webp (JPEG format) -->
+            <source
+              srcset="./assets/images/image-web-3-mobile.jpg"
+              type="image/jpeg"
+              media="(max-width: 37.5rem)"
+              alt="img-content-mobile"
+              class="responsive-image"
+            />
+
+            <source
+              srcset="./assets/images/image-web-3-desktop.jpg"
+              type="image/jpeg"
+              media="(min-width: 102.5rem)"
+              alt="img-content-desktop"
+              class="responsive-image"
+            />
+
+            <!-- Fallback for older browsers or when `srcset` is not supported -->
+            <img
+              src="./assets/images/image-web-3-desktop.jpg"
+              alt="img-content-desktop"
+              class="responsive-image"
+            />
+          </picture>
+
+          <h1 id="main-title" class="main-content">
+            The Bright Future of Web 3.0?
+          </h1>
+          <div class="main-content">
+            <p id="main-subtitle">
+              We dive into the next evolution of the web that claims to put the
+              power of the platforms back into the hands of the people. But is
+              it really fulfilling its promise?
+            </p>
+            <button class="read-more" aria-describedby="main-subtitle">
+              Read more
+            </button>
+          </div>
+
+          <section
+            class="new-section main-content4"
+            aria-labelledby="new-section"
+          >
+            <p class="new">New</p>
+            <ul aria-labelledby="new-article">
+              <li aria-labelledby="hydrogen">
+                <h2 class="new-title">Hydrogen VS Electric Cars</h2>
+                <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+              </li>
+              <li aria-labelledby="ai-artistry">
+                <h2 class="new-title">The Downsides of AI Artistry</h2>
+                <p>
+                  What are the possible adverse effects of on-demand AI image
+                  generation?
+                </p>
+              </li>
+              <li aria-labelledby="funding">
+                <h2 class="new-title">Is VC Funding Drying Up?</h2>
+                <p>
+                  Private funding by VC firms is down 50% YOY. We take a look at
+                  what that means.
+                </p>
+              </li>
+            </ul>
+          </section>
+        </div>
+        <section aria-labelledby="list-section">
+          <ol class="list-container">
+            <li class="list-content" aria-labelledby="list-1">
+              <img
+                src="./assets/images/image-retro-pcs.jpg"
+                alt="img-retro-pcs"
+              />
+              <div class="list-content-item">
+                <p class="list-number">01</p>
+                <h2 class="list-title">Reviving Retro PCs</h2>
+                <p class="list-subtitle">
+                  What happens when old PCs are given modern upgrades?
+                </p>
+              </div>
+            </li>
+            <li class="list-content" aria-labelledby="list-2">
+              <img
+                src="./assets/images/image-top-laptops.jpg"
+                alt="img-top-laptops"
+              />
+              <div class="list-content-item">
+                <p class="list-number">02</p>
+                <h2 class="list-title">Top 10 Laptops of 2022</h2>
+                <p class="list-subtitle">
+                  Our best picks for various needs and budgets.
+                </p>
+              </div>
+            </li>
+            <li class="list-content" aria-labelledby="list-3">
+              <img
+                src="./assets/images/image-gaming-growth.jpg"
+                alt="img-gaming-growth"
+              />
+              <div class="list-content-item">
+                <p class="list-number">03</p>
+                <h2 class="list-title">The Growth of Gaming</h2>
+                <p class="list-subtitle">
+                  How the pandemic has sparked fresh opportunities.
+                </p>
+              </div>
+            </li>
+          </ol>
+        </section>
+      </article>
+    </main>
   </body>
 </html>
