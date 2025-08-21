@@ -35,7 +35,6 @@
           class="nav-toggle"
           aria-controls="site-nav"
           aria-expanded="false"
-          aria-label="Open menu"
           aria-haspopup="menu"
         >
           <img
@@ -55,7 +54,7 @@
         </ul>
       </nav>
     </header>
-    <main id="maiin">
+    <main id="main">
       <article aria-labelledby="main-headline">
         <div class="main-container">
           <picture class="main-content1">
@@ -64,9 +63,6 @@
               srcset="./assets/images/image-web-3-mobile.jpg"
               type="image/webp"
               media="(max-width: 37.5rem)"
-              alt="img-content"
-              class="img"
-              class="responsive-image"
             />
 
             <!-- For large screens (desktop) -->
@@ -74,8 +70,6 @@
               srcset="./assets/images/image-web-3-desktop.jpg"
               type="image/webp"
               media="(min-width: 102.5rem)"
-              alt="img-content-desktop"
-              class="responsive-image"
             />
 
             <!-- Fallback for browsers that don’t support webp (JPEG format) -->
@@ -83,16 +77,12 @@
               srcset="./assets/images/image-web-3-mobile.jpg"
               type="image/jpeg"
               media="(max-width: 37.5rem)"
-              alt="img-content-mobile"
-              class="responsive-image"
             />
 
             <source
               srcset="./assets/images/image-web-3-desktop.jpg"
               type="image/jpeg"
               media="(min-width: 102.5rem)"
-              alt="img-content-desktop"
-              class="responsive-image"
             />
 
             <!-- Fallback for older browsers or when `srcset` is not supported -->
@@ -119,9 +109,9 @@
 
           <section
             class="new-section main-content4"
-            aria-labelledby="new-section"
+            aria-labelledby="new-heading"
           >
-            <p class="new">New</p>
+            <h2 id="new-heading" class="new">New</h2>
             <ul aria-labelledby="new-article">
               <li aria-labelledby="hydrogen">
                 <h2 class="new-title">Hydrogen VS Electric Cars</h2>
